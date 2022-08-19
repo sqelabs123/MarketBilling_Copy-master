@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5">
+  
+	<parameter name="url"
+		value="https://markettestv8.utilibill.com.au/marketbilling/"></parameter>
+	<parameter name="userId" value="mark_gutenberg60@yopmail.com"></parameter>
+	<parameter name="password" value="Test@1234"></parameter>
+
+
+<!-- <test thread-count="5" name="Update Statement Dates, Download statement and Email Statement">
+
+		<classes>
+
+			<class name="Marketing_Project.Other_Scenarios" />
+
+		</classes>
+	</test>   -->  
+ 	
+   <test thread-count="5" name="Run Bill to Check Auto Due Date Feature for All Customer type">
+
+		<classes>
+
+			<class name="Marketing_Project.Enable_Auto_Due_Date" />
+
+		</classes>
+	</test>        
+  
+    	
+</suite> <!-- Suite -->

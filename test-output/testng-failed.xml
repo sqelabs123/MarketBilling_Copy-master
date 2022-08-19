@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="password" value="Test@1234"/>
+  <parameter name="userId" value="mark_gutenberg60@yopmail.com"/>
+  <parameter name="url" value="https://markettestv8.utilibill.com.au/marketbilling/"/>
+  <test name="Run Bill to Check Auto Due Date Feature for All Customer type(failed)">
+    <classes>
+      <class name="Marketing_Project.Enable_Auto_Due_Date">
+        <methods>
+          <include name="Calender_Days_Due_Date"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="Enable_Due_Date_By_Payment_Terms" invocation-numbers="0"/>
+          <include name="Add_Residential_Customer"/>
+          <include name="Add_Commercial_customer"/>
+          <include name="Business_Days_Due_Date"/>
+          <include name="setExtent"/>
+          <include name="End_of_Month_Due_Date"/>
+          <include name="Add_Bussiness_Customer"/>
+          <include name="Add_BillRun_Cycle"/>
+        </methods>
+      </class> <!-- Marketing_Project.Enable_Auto_Due_Date -->
+    </classes>
+  </test> <!-- Run Bill to Check Auto Due Date Feature for All Customer type(failed) -->
+</suite> <!-- Failed suite [Suite] -->

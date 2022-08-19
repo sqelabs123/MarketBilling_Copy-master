@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Run Bill to Check Auto Due Date Feature for All Customer type</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">8</td><td class="numi">574.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Run Bill to Check Auto Due Date Feature for All Customer type &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="8">Marketing_Project.Enable_Auto_Due_Date</td><td><a href="#m1"><b>Add_BillRun_Cycle</b>  </a></td><td class="numi">1</td><td>1660829601320</td><td class="numi">61585</td></tr><tr class="failedodd"><td><a href="#m2"><b>Add_Bussiness_Customer</b>  </a></td><td class="numi">1</td><td>1660829539750</td><td class="numi">61568</td></tr><tr class="failedodd"><td><a href="#m3"><b>Add_Commercial_customer</b>  </a></td><td class="numi">1</td><td>1660829416284</td><td class="numi">61590</td></tr><tr class="failedodd"><td><a href="#m4"><b>Add_Residential_Customer</b>  </a></td><td class="numi">1</td><td>1660829477878</td><td class="numi">61868</td></tr><tr class="failedodd"><td><a href="#m5"><b>Business_Days_Due_Date</b>  </a></td><td class="numi">1</td><td>1660829784032</td><td class="numi">60644</td></tr><tr class="failedodd"><td><a href="#m6"><b>Calender_Days_Due_Date</b>  </a></td><td class="numi">1</td><td>1660829662906</td><td class="numi">60568</td></tr><tr class="failedodd"><td><a href="#m7"><b>Enable_Due_Date_By_Payment_Terms</b>  </a></td><td class="numi">1</td><td>1660829270577</td><td class="numi">145704</td></tr><tr class="failedodd"><td><a href="#m8"><b>End_of_Month_Due_Date</b>  </a></td><td class="numi">1</td><td>1660829723476</td><td class="numi">60553</td></tr>
+</table>
+<h1>Run Bill to Check Auto Due Date Feature for All Customer type</h1>
+<h2 id="m1">Marketing_Project.Enable_Auto_Due_Date:Calender_Days_Due_Date</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Bill Run tab not displayed-----Expected condition failed: waiting for element to be clickable: By.cssSelector: i.icon-tasks (tried for 60 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-1LU8MBC', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50639}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\WINDOWS\TEMP\scoped_dir41484_695915122}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1e873adb9e3ab53fee913173ac6118d3<br/>
+<h3>Failure</h3>
+<p>Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;Re_Useable.Repo_testing.Bill_Run()&quot; is null</p>
+Marketing_Project.Enable_Auto_Due_Date.Calender_Days_Due_Date(Enable_Auto_Due_Date.java:1413)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">Marketing_Project.Enable_Auto_Due_Date:Add_Residential_Customer</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Logout  icon  not displayed-----Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="navbar-menu"]/div/ul/li[2]/a/i (tried for 60 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-1LU8MBC', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50639}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\WINDOWS\TEMP\scoped_dir41484_695915122}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1e873adb9e3ab53fee913173ac6118d3<br/>
+<h3>Failure</h3>
+<p>Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;Re_Useable.Repo_testing.Customertab()&quot; is null</p>
+Marketing_Project.Enable_Auto_Due_Date.Add_Residential_Customer(Enable_Auto_Due_Date.java:556)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">Marketing_Project.Enable_Auto_Due_Date:Add_Commercial_customer</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Logout  icon  not displayed-----Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="navbar-menu"]/div/ul/li[2]/a/i (tried for 60 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-1LU8MBC', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50639}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\WINDOWS\TEMP\scoped_dir41484_695915122}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1e873adb9e3ab53fee913173ac6118d3<br/>
+<h3>Failure</h3>
+<p>Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;Re_Useable.Repo_testing.Customertab()&quot; is null</p>
+Marketing_Project.Enable_Auto_Due_Date.Add_Commercial_customer(Enable_Auto_Due_Date.java:126)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">Marketing_Project.Enable_Auto_Due_Date:Add_BillRun_Cycle</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Admin Tab not displayed -----Expected condition failed: waiting for element to be clickable: By.xpath: .//*[contains(text(),'Admin')] (tried for 60 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-1LU8MBC', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50639}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\WINDOWS\TEMP\scoped_dir41484_695915122}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1e873adb9e3ab53fee913173ac6118d3<br/>
+<h3>Failure</h3>
+<p>Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;Re_Useable.Repo_testing.Admin()&quot; is null</p>
+Marketing_Project.Enable_Auto_Due_Date.Add_BillRun_Cycle(Enable_Auto_Due_Date.java:1330)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">Marketing_Project.Enable_Auto_Due_Date:Enable_Due_Date_By_Payment_Terms</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>mark_gutenberg60@yopmail.com</td>
+<td>Test@1234</td>
+<td>https://markettestv8.utilibill.com.au/marketbilling/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="3">
+<h3>Test Messages</h3>
+UserName field icon not displayed-----Expected condition failed: waiting for element to be clickable: By.id: j_username (tried for 80 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-1LU8MBC', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50639}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\WINDOWS\TEMP\scoped_dir41484_695915122}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1e873adb9e3ab53fee913173ac6118d3<br/>
+<h3>Failure</h3>
+<p>Cannot invoke &quot;org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])&quot; because the return value of &quot;Re_Useable.Repo_testing.useranme()&quot; is null</p>
+Re_Useable.Login_site.Login(Login_site.java:123)
+<br/>at Marketing_Project.Enable_Auto_Due_Date.Enable_Due_Date_By_Payment_Terms(Enable_Auto_Due_Date.java:62)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">Marketing_Project.Enable_Auto_Due_Date:End_of_Month_Due_Date</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Admin Tab not displayed -----Expected condition failed: waiting for element to be clickable: By.xpath: .//*[contains(text(),'Admin')] (tried for 60 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-1LU8MBC', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50639}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\WINDOWS\TEMP\scoped_dir41484_695915122}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1e873adb9e3ab53fee913173ac6118d3<br/>
+<h3>Failure</h3>
+<p>Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;Re_Useable.Repo_testing.Admin()&quot; is null</p>
+Marketing_Project.Enable_Auto_Due_Date.End_of_Month_Due_Date(Enable_Auto_Due_Date.java:1525)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">Marketing_Project.Enable_Auto_Due_Date:Add_Bussiness_Customer</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Logout  icon  not displayed-----Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="navbar-menu"]/div/ul/li[2]/a/i (tried for 60 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-1LU8MBC', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50639}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\WINDOWS\TEMP\scoped_dir41484_695915122}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1e873adb9e3ab53fee913173ac6118d3<br/>
+<h3>Failure</h3>
+<p>Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;Re_Useable.Repo_testing.Customertab()&quot; is null</p>
+Marketing_Project.Enable_Auto_Due_Date.Add_Bussiness_Customer(Enable_Auto_Due_Date.java:924)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">Marketing_Project.Enable_Auto_Due_Date:Business_Days_Due_Date</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Admin Tab not displayed -----Expected condition failed: waiting for element to be clickable: By.xpath: .//*[contains(text(),'Admin')] (tried for 60 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-1LU8MBC', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50639}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\WINDOWS\TEMP\scoped_dir41484_695915122}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1e873adb9e3ab53fee913173ac6118d3<br/>
+<h3>Failure</h3>
+<p>Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;Re_Useable.Repo_testing.Admin()&quot; is null</p>
+Marketing_Project.Enable_Auto_Due_Date.Business_Days_Due_Date(Enable_Auto_Due_Date.java:1732)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

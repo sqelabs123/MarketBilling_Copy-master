@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+   <parameter name="url" value="https://powerclubuat.utilibill.com.au/powerclub/"></parameter>
+	<parameter name="userId" value="powerclubuat55@yopmail.com"></parameter>
+	<parameter name="password" value="C123456789@c"></parameter>
+    <classes>
+   
+   
+           <class name="Marketing_Project.Customer_Update"/>
+ <!--      <class name="Marketing_Project.Market_TOU_FIle_and_AddPlan"/>   
+           <class name="Marketing_Project.Market_All_Cusotmer"/>
+           <class name="Marketing_Project.Customer_Update"/>
+     
+     
+     
+     //Old Classes under xml sheet
+      	<class name="Marketing_Project.Import_Services"/>
+      	<class name="Marketing_Project.Add_Plans"/>
+      	<class name="Marketing_Project.Add_Customer"/>    
+      
+   --> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

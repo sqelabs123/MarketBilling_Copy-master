@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5">
+ 
+      
+   <parameter name="url" value="https://utbrxuat.utilibill.com.au/utbrx/"></parameter>
+	<parameter name="userId" value="qa_tester"></parameter>
+	<parameter name="password" value="Qa123!@#"></parameter>
+	
+<!--     <test thread-count="5" name="Import TOU File And Add Plans">
+
+		<classes>
+            
+			<class name="Marketing_Project.Market_TOU_FIle_and_AddPlan" />
+
+		</classes>
+	</test>
+
+
+ <test thread-count="5" name="Add All Type of Customers and its Services">
+
+		<classes>
+
+			<class name="Marketing_Project.Market_All_Cusotmer" />
+
+		</classes>
+	</test>
+
+	<test thread-count="5" name="All Customers Billrun With No_Cycle">
+
+		<classes>
+
+			<class name="Marketing_Project.Billrun_With_No_Cycle" />
+
+		</classes>
+	</test>
+
+ 
+	<test thread-count="5" name="Single Customer Bill Run, Rollback and Rebill">
+
+		<classes>
+
+			<class name="Marketing_Project.Single_Customer_Bill_Run" />
+
+		</classes>
+	</test>  
+	 	 <test thread-count="5" name="Two Customers Bill Run, Rollback and Rebill">
+
+		<classes>
+
+			<class name="Marketing_Project.Two_Customers_Bill_Run" />
+
+		</classes>
+	</test>
+  
+	<test thread-count="5" name="More Than two Customers Bill Run, Rollback and Rebill">
+
+		<classes>
+
+			<class name="Marketing_Project.Large_Bill_Run" />
+
+		</classes>
+	</test>  
+
+	 <test thread-count="5" name="Update Customer Service Details">
+
+		<classes>
+
+			<class name="Marketing_Project.Customer_Update" />
+
+		</classes>
+	</test>   
+	
+	 <test thread-count="5" name="Bill run using Import and Payment">
+
+		<classes>
+
+			<class name="Marketing_Project.Bill_Run_With_Import_And_Transactions" />
+
+		</classes>
+	</test>  -->
+	
+	    <test thread-count="5" name="Update Statement Dates, Download statement and Email Statement">
+
+		<classes>
+
+			<class name="Marketing_Project.Other_Scenarios" />
+
+		</classes>
+	</test>    
+
+   <test thread-count="5" name="Run Bill to Check Auto Due Date Feature for All Customer type">
+
+		<classes>
+
+			<class name="Marketing_Project.Enable_Auto_Due_Date" />
+
+		</classes>
+	</test>    
+</suite> 
